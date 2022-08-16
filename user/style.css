@@ -228,12 +228,12 @@ a {
 }
 
 #card2 #img2 {
-    background-image: url('/images/img2.jpeg');
+    background-image: url('../images/img2.jpeg');
     background-position: center 15%;
 }
 
 #card3 #img3 {
-    background-image: url('/images/img3.jpeg');
+    background-image: url('../images/img3.jpeg');
 }
 
 .card .text {
@@ -297,7 +297,7 @@ a {
     align-items: center;
     justify-content: space-between;
     background-size: cover;
-    background-image: url('/fcfcfv.jpg');
+    background-image: url('../fcfcfv.jpg');
     animation: slider 10s infinite cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -367,16 +367,16 @@ a {
 
 @keyframes slider {
     0% {
-        background-image: url('/fcfcfv.jpg');
+        background-image: url('../fcfcfv.jpg');
     }
 
     35% {
-        background-image: url('/kid.jpg');
+        background-image: url('../kid.jpg');
         background-position: right;
     }
 
     70% {
-        background-image: url('/boy-g9a93f1c7b_1280.jpg');
+        background-image: url('../boy-g9a93f1c7b_1280.jpg');
     }
 }
 
