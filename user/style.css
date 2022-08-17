@@ -11,13 +11,13 @@
 }
 
 @font-face {
-    font-family: 'Aeonik';   
+    font-family: 'Aeonik';
     src: url(/fonts/Aeonik-Medium.ttf);
     font-weight: 600;
 }
 
 @font-face {
-    font-family: 'Aeonik';   
+    font-family: 'Aeonik';
     src: url(/fonts/Aeonik-Medium.ttf);
     font-weight: 500;
 }
@@ -658,11 +658,12 @@ a {
     left: 60px;
     bottom: 25px;
     font-family: 'Aeonik';
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 
 #newUser:hover {
-    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
-    border-bottom: 1px solid #6C63FF;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+    color: #6C63FF;
 }
 
 #textlog {
@@ -1007,4 +1008,55 @@ a {
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
     cursor: pointer;
     background-color: #4D327B;
+}
+
+.user-org-panel {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(92, 92, 92, 0.47);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    display: none;
+}
+
+.user-org-panel .panels {
+    width: 40vw;
+    height: 50vh;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(255, 0, 0, 0.558); */
+}
+
+/* .user-org-panel .panels:nth-child(1) {
+    background-image: url('../images/user.webp');  
+    background-size: cover;  
+    background-position: center;
+}
+
+.user-org-panel .panels:nth-child(2) {
+    background-image: url('../images/org.jpg');  
+    background-size: cover;  
+    background-position: center;
+} */
+
+.user-org-panel a {
+    font-family: 'Aeonik';
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+}
+
+.panels:hover a {
+    color: #fff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+    font-size: 40px;
 }

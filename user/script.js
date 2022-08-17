@@ -1,11 +1,23 @@
 var logSign = document.querySelector('#logSign');
 var regScreen = document.querySelector('.regScreen');
 var logScreen = document.querySelector('.logScreen');
+var userOrgPanel = document.querySelector('.user-org-panel');
 
 var main = document.querySelector('#main');
 logSign.addEventListener('click', function () {
-    logScreen.style.display = 'flex';
+    userOrgPanel.style.display = 'flex';
     main.style.overflowY = 'hidden';
+})
+
+var userpanel = document.querySelector('.user-panel');
+userpanel.addEventListener('click', function () {
+    userOrgPanel.style.display = 'none';
+    logScreen.style.display = 'flex';
+})
+
+var orgpanel = document.querySelector('.org-panel');
+orgpanel.addEventListener('click', function () {
+    window.location.href = '/org';
 })
 
 var logclose = document.querySelector('.close #loginclose');
