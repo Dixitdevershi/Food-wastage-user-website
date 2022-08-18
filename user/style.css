@@ -298,6 +298,8 @@ a {
     justify-content: space-between;
     background-size: cover;
     background-image: url('../fcfcfv.jpg');
+    position: relative;
+    z-index: 9;
     animation: slider 10s infinite cubic-bezier(0.19, 1, 0.22, 1);
 }
 

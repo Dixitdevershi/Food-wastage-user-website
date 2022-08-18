@@ -7,12 +7,18 @@ var main = document.querySelector('#main');
 logSign.addEventListener('click', function () {
     userOrgPanel.style.display = 'flex';
     main.style.overflowY = 'hidden';
+    window.addEventListener('keydown', function (dets) {
+        if(dets.keyCode === 27) userOrgPanel.style.display = 'none';
+    })
 })
 
 var userpanel = document.querySelector('.user-panel');
 userpanel.addEventListener('click', function () {
     userOrgPanel.style.display = 'none';
     logScreen.style.display = 'flex';
+    window.addEventListener('keydown', function (dets) {
+        if(dets.keyCode === 27) logScreen.style.display = 'none';
+    })
 })
 
 var orgpanel = document.querySelector('.org-panel');
