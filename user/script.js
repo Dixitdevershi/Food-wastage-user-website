@@ -23,7 +23,7 @@ userpanel.addEventListener('click', function () {
 
 var orgpanel = document.querySelector('.org-panel');
 orgpanel.addEventListener('click', function () {
-    window.location.href = '/org';
+    window.location.href = '/Alms-Deed/org/index.html';
 })
 
 var logclose = document.querySelector('.close #loginclose');
