@@ -28,8 +28,8 @@
                 <a id="" href="#page1">
                     <h3>HOME</h3>
                 </a>
-                <a href="#stats">
-                    <h3>STATS</h3>
+                <a href="#our-mission">
+                    <h3>OUR MISSION</h3>
                 </a>
                 <a href="#org">
                     <h3>LISTED NGOs</h3>
@@ -46,10 +46,10 @@
         </div>
         <div class="user-org-panel">
             <div class="user-panel panels">
-                <a href="">User login</a>
+                <a>User login</a>
             </div>
             <div class="org-panel panels">
-                <a href="/Alms-Deed/org/index.html">Organization login</a>
+                <a href="/Alms-Deed/org/index.html" id="orglogin">Organization login</a>
             </div>
         </div>
         <div class="logScreen same">
@@ -64,14 +64,14 @@
                     <ion-icon name="close-outline" id="loginclose"></ion-icon>
                 </div>
                 <div id="logdets">
-                    <form action="">
+                    <form action="" id="usernameform">
                         <ion-icon name="person-sharp"></ion-icon>
                         <input type="text" name="username" id="unameinput" placeholder="Username" autocomplete="off">
                     </form>
-                    <form action="">
+                    <form action="" id="passwordform">
                         <i class="ri-lock-2-fill"></i>
                         <input type="password" name="password" class="password" placeholder="Password"
-                            autocomplete="off">
+                            autocomplete="off" id="password">
                         <div class="eye">
                             <ion-icon name="eye-off-outline" class="eye-hide"></ion-icon>
                             <ion-icon name="eye-outline" class="eye-show hide"></ion-icon>
@@ -94,12 +94,12 @@
                     <ion-icon name="close-outline" id="regclose"></ion-icon>
                 </div>
                 <div id="details">
-                    <form action="">
+                    <form action="" id="regform">
                         <div id="name" class="form">
                             <ion-icon name="person-sharp"></ion-icon>
                             <input type="text" name="name" id="nameinput" placeholder="Name" autocomplete="off">
                         </div>
-                        <div id="mail" class="form">
+                        <div id="mail" class="form" id="emailform">
                             <ion-icon name="mail"></ion-icon>
                             <input type="text" name="email" id="emailinput" placeholder="Email" autocomplete="off">
                         </div>
@@ -123,8 +123,8 @@
                         </div>
                         <div id="password-div">
                             <i class="ri-lock-2-fill"></i>
-                            <input type="password" name="password" class="password" placeholder="Password"
-                                autocomplete="off">
+                            <input type="password" name="passwordreg" class="password" placeholder="Password"
+                                autocomplete="off" id="passwordinput">
                             <div class="eye">
                                 <ion-icon name="eye-off-outline" class="eye-hide"></ion-icon>
                                 <ion-icon name="eye-outline" class="eye-show hide"></ion-icon>
@@ -138,8 +138,9 @@
         <div id="images">
             <div class="app-install">
                 <h2>We need your help!</h2>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatum nesciunt aliquam quos
-                    soluta dolor fuga repellendus, voluptatem excepturi inventore!</h3>
+                <h3>About 40 % of the food produced in India is wasted. Despite adequate food
+                    production, the UN has reported that about 190 million Indians remain undernourished.
+                    Contribute to a better future.</h3>
                 <div id="buttons">
                     <button type="button" class="btn btn-dark btn-lg download-button ibutton">
                         <i class="fab fa-apple" style="margin-right: 3px; font-size: 16px;"></i> Download
@@ -196,7 +197,7 @@
             <h2>OUR MISSION</h2>
             <div id="m-details">
                 <div id="m-img">
-                    <video src="./Alms-Deed-Anim.mp4" autoplay unmuted controls></video>
+                    <video src="./AlmsdeedfinalSegment.mp4" controls></video>
                 </div>
                 <div id="m-content">
                     <div id="hs" class="m-text">
@@ -205,7 +206,7 @@
                         </div>
                         <div class="hs-text mt">
                             <h3>Help & Support</h3>
-                            <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, hic.</h5>
+                            <h5>1.3 billion tonnes of food can be utilized every year that goes to waste.</h5>
                         </div>
                     </div>
                     <div id="sfw" class="m-text">
@@ -214,7 +215,7 @@
                         </div>
                         <div class="sfw-text mt">
                             <h3>Starve Free World</h3>
-                            <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, hic.</h5>
+                            <h5>Limiting food waste globally could reduce the need to raise more food by 60%.</h5>
                         </div>
                     </div>
                     <div id="hh" class="m-text">
@@ -222,8 +223,9 @@
                             <img src="images/helping-hand.png" alt="">
                         </div>
                         <div class="hh-text mt">
-                            <h3>Helping Hand</h3>
-                            <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, hic.</h5>
+                            <h3>Helping Environment</h3>
+                            <h5>The disposal of food loss and waste in landfills, leads to greenhouse gas emissions,
+                                contributing to climate change.</h5>
                         </div>
                     </div>
                 </div>
@@ -245,16 +247,16 @@
                     <div class="efc-text">
                         <h1>Enter food category</h1>
                     </div>
-                    <form action="" id="wd" method="post">
+                    <form action="/" id="wd" method="post">
                         <div class="q1 qs">
                             <div class="q1-text q-text">
                                 <h2>Is your food wet or dry? <span style="color: red">*</span></h2>
                                 <div class="wet-input inputs">
-                                    <input type="radio" name="wetordry">
+                                    <input type="radio" name="wetordry" value="Wet" required>
                                     <h3>Wet</h3>
                                 </div>
                                 <div class="dry-input inputs">
-                                    <input type="radio" name="wetordry">
+                                    <input type="radio" name="wetordry" value="Dry" required>
                                     <h3>Dry</h3>
                                 </div>
                             </div>
@@ -263,11 +265,11 @@
                             <div class="q2-text q-text">
                                 <h2>Is your food raw or cooked? <span style="color: red">*</span></h2>
                                 <div class="raw-input inputs">
-                                    <input type="radio" name="rc">
+                                    <input type="radio" name="rc" value="Raw" required>
                                     <h3>Raw</h3>
                                 </div>
                                 <div class="cooked-input inputs">
-                                    <input type="radio" name="rc">
+                                    <input type="radio" name="rc" value="Cooked" required>
                                     <h3>Cooked</h3>
                                 </div>
                             </div>
@@ -276,11 +278,11 @@
                             <div class="q3-text q-text">
                                 <h2>Is your food eatable or rotten? <span style="color: red">*</span></h2>
                                 <div class="eatable-input inputs">
-                                    <input type="radio" name="er">
+                                    <input type="radio" name="er" value="Eatable" required>
                                     <h3>Eatable</h3>
                                 </div>
                                 <div class="rotten-input inputs">
-                                    <input type="radio" name="er">
+                                    <input type="radio" name="er" value="Rotten" required>
                                     <h3>Rotten</h3>
                                 </div>
                             </div>
@@ -289,11 +291,11 @@
                             <div class="q4-text q-text">
                                 <h2>Is your food veg or non-veg? <span style="color: red">*</span></h2>
                                 <div class="veg-input inputs">
-                                    <input type="radio" name="vn">
+                                    <input type="radio" name="vn" value="Veg" required>
                                     <h3>Vegetarian</h3>
                                 </div>
                                 <div class="nv-input inputs">
-                                    <input type="radio" name="vn">
+                                    <input type="radio" name="vn" value="Non-veg" required>
                                     <h3>Non-vegetarian</h3>
                                 </div>
                             </div>
@@ -303,7 +305,7 @@
                                 <h2>Enter food quantity <span style="color: red">*</span></h2>
                                 <div class="qty-input">
                                     <h3>Quantity (In kgs)</h3><input type="number" name="qty" placeholder="Quantity"
-                                        value="0.5" step="0.5" min="0">
+                                        value="0.5 " step="0.5" min="0" required>
                                 </div>
                             </div>
                         </div>
@@ -312,6 +314,14 @@
                                 <h2>Enter food description</h2>
                                 <div class="desc-input">
                                     <textarea name="fooddesc" placeholder="Enter food description"></textarea>
+                                    <!-- <textarea name="userl" id="userId"
+                                        placeholder="Enter food description"></textarea> -->
+                                    <!-- <script>
+
+                                        document.querySelector("#userId").textContent = localStorage.getItem("userid");
+                                             //document.querySelector("#userId").style.display="none";
+
+                                    </script> -->
                                 </div>
                             </div>
                         </div>
@@ -323,12 +333,166 @@
                 </div>
             </div>
         </div>
+        <div class="footer-imgs">
+            <div class="f-imgs"></div>
+        </div>
+
     </div>
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="user/script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-auth.js";
+        import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-database.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyBq9ocRNammXkd9jLhrk8dxZ6Fq9xA4Am0",
+            authDomain: "alms--deed.firebaseapp.com",
+            projectId: "alms--deed",
+            storageBucket: "alms--deed.appspot.com",
+            messagingSenderId: "122388347636",
+            appId: "1:122388347636:web:289c919e588e2b1f35fca1",
+            measurementId: "G-C17B87WNH2"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const analytics = getAnalytics(app);
+        const auth = getAuth(app);
+
+        let loginButton = document.querySelector("#loginButton");
+        loginButton.addEventListener('click', (e) => {
+            var email = document.getElementById('unameinput').value;
+
+            var password = document.getElementById('password').value;
+
+
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    var lgDate = new Date();
+                    update(ref(database, 'users/' + user.uid), {
+                        last_login: lgDate,
+
+                    })
+                        .then((res) => {
+                            // Data saved successfully!
+                            //  alert('User successfully loged In');
+                            // document.querySelector("#logSign").innerHTML = "<h3>LOGOUT<h3>";
+                             //   localStorage.setItem("userid", user.uid);
+
+                            document.getElementById("usernameform").reset();
+                            document.getElementById("passwordform").reset();
+                            //window.location = '/';
+                            document.querySelector('.logScreen').style.display = 'none';
+                            document.querySelector("#logSign").innerHTML = "<h3>LOGOUT</h3>";
+
+
+
+
+                        })
+                        .catch((error) => {
+                            // The write failed...
+                            alert(error);
+                            window.location = '/';
+
+                        });
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert(errorMessage);
+                });
+        });
+        // let signupbtn=document.querySelector("#signupbtn");
+        signupbtn.addEventListener('click', (e) => {
+
+            var email = document.getElementById('emailinput').value;
+            var password = document.getElementById('passwordinput').value;
+            // var name = document.getElementById('nameinput').value;
+            // var city = document.getElementById('cityinput').value;
+            // var state = document.getElementById('stateinput').value;
+            // var adress = document.getElementById('adressinput').value;
+
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    set(ref(database, 'users/' + user.uid), {
+                        password: password,
+                        email: email
+                        // adress:adress,
+                        // name:name,
+                        // city:city,
+                        // state:state
+                    })
+                        .then((res) => {
+                            // Data saved successfully!
+                            //alert('User successfully signed In');
+
+                            document.getElementById("regform").reset();
+                            document.querySelector('.regScreen').style.display = 'none';
+                            document.querySelector("#logSign").innerHTML = "<h3>LOGOUT</h3>";
+                            // window.location="/";
+
+
+                        })
+                        .catch((error) => {
+                            // The write failed...
+                            alert(error);
+                            window.location = "/";
+
+                        });
+
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert(error);
+
+                    // ..
+                });
+            // signupbtn.addEventListener('click', function(){
+            //     var name = document.getElementById('nameinput').value;
+            //     var city = document.getElementById('cityinput').value;
+            //     var state = document.getElementById('stateinput').value;
+            //     var adress = document.getElementById('adressinput').value;
+            //     set(ref(database, 'users/' + user.uid), {
+            //             adress:adress,
+            //             name:name,
+            //             city:city,
+            //             state:state
+            //         })
+            //         .then((res) => {
+            //             alert("Data entered succesfully");
+            //         })
+            //         .catch((error)=>{
+            //            alert("Data error");
+            //         });
+
+            // });
+
+
+            // signOut(auth).then(() => {
+            //     alert("Sign out successfully");
+            // }).catch((error) => {
+            //     alert("Something bad happen in sign out");
+            // });
+        });
+    </script>
 </body>
 
 </html>
